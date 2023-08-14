@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar-brand">
+        <img src="./assets/logo.png" alt="Logo.png" class="logo" />
+        <h2>Music Application</h2>
+      </div>
+      <div class="navbar-nav">
+        <ul class="navigation">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="music-playlist">
+      <ul class="playlist">
+        <li class="song">
+          <p id="1" class="songName">
+            _Teri Aashiqui Ne Mara_64(PagalWorld.com.pe).mp3
+          </p>
+          <span class="playSong">
+            <i class="icon icon-1 fa-solid fa-play-circle"></i>
+          </span>
+        </li>
+        <li class="song">
+          <p id="2" class="songName">
+            Arijit Singh - Dhokha_64(PagalWorld.com.pe).mp3
+          </p>
+          <span class="playSong">
+            <i class="icon icon-2 fa-solid fa-play-circle"></i>
+          </span>
+        </li>
+        <li class="song">
+          <p id="3" class="songName">
+            Har Har Shambhu Shiv Mahadeva_64(PagalWorld.com.pe).mp3
+          </p>
+          <span class="playSong">
+            <i class="icon icon-3 fa-solid fa-play-circle"></i>
+          </span>
+        </li>
+        <li class="song">
+          <p id="4" class="songName">Malang Sajna_64(PagalWorld.com.pe).mp3</p>
+          <span class="playSong">
+            <i class="icon icon-4 fa-solid fa-play-circle"></i>
+          </span>
+        </li>
+        <li class="song">
+          <p id="5" class="songName">
+            Pyaar Hota Kayi Baar Hai_64(PagalWorld.com.pe).mp3
+          </p>
+          <span class="playSong">
+            <i class="icon icon-5 fa-solid fa-play-circle"></i>
+          </span>
+        </li>
+        <li class="song">
+          <p id="6" class="songName">
+            Raatan Lambiyan_64(PagalWorld.com.pe).mp3
+          </p>
+          <span class="playSong">
+            <i class="icon icon-6 fa-solid fa-play-circle"></i>
+          </span>
+        </li>
+        <li class="song">
+          <p id="7" class="songName">Tere Hawaale_64(PagalWorld.com.pe).mp3</p>
+          <span class="playSong">
+            <i class="icon icon-7 fa-solid fa-play-circle"></i>
+          </span>
+        </li>
+        <li class="song">
+          <p id="8" class="songName">
+            Tere Mera Naataa_64(PagalWorld.com.pe).mp3
+          </p>
+          <span class="playSong">
+            <i class="icon icon-8 fa-solid fa-play-circle"></i>
+          </span>
+        </li>
+        <li class="song">
+          <p id="9" class="songName">
+            Tere Pyar Mein_64(PagalWorld.com.pe).mp3
+          </p>
+          <span class="playSong">
+            <i class="icon icon-9 fa-solid fa-play-circle"></i>
+          </span>
+        </li>
+      </ul>
+    </section>
+    <section class="songPlayer">
+      <div class="progressBar">
+        <input
+          class="bar"
+          id="range-input"
+          type="range"
+          min="0"
+          max="100"
+          value="0"
+        />
+      </div>
+      <div class="songSelected">
+        <p id="songDetails"></p>
+        <div class="player">
+          <div class="play-icons">
+            <i id="previous" class="icon fa-solid fa-backward"></i>
+            <i id="main-play" class="icon fa-solid fa-play-circle"></i>
+            <i id="next" class="icon fa-solid fa-forward"></i>
+          </div>
+        </div>
+        <div class="playAnimation">
+          <img
+            class="animation"
+            src="./assets/musically-beats.gif"
+            alt="song player beats"
+          />
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/047bca075c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
