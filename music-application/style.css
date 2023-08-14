@@ -1,0 +1,164 @@
+body {
+  background-color: bisque;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+}
+
+header {
+  min-width: 824px;
+  background-color: chocolate;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-brand {
+  margin: 12px 20px;
+  display: flex;
+  flex-direction: row;
+}
+.navbar-brand .logo {
+  width: 42px;
+  border-radius: 50%;
+}
+.navbar-brand h2 {
+  margin: auto 10px;
+}
+.navbar-nav {
+  margin: auto 0px;
+}
+.navbar-nav .navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.nav-link {
+  color: white;
+  margin: auto 10px;
+  text-decoration: none;
+}
+.music-playlist {
+  height: 68vh;
+  width: 80vw;
+  min-width: 750px;
+  margin: 20px auto;
+  border-radius: 20px;
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.playlist {
+  margin: 20px 0px;
+  width: 35vw;
+  min-width: 550px;
+  position: relative;
+  left: 20px;
+  height: 60vh;
+  list-style-type: none;
+  overflow-y: scroll;
+}
+.playlist::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 50%;
+  background-color: tomato;
+}
+.playlist::-webkit-scrollbar-track {
+  background-color: orange;
+  width: 3px;
+  margin: 0px 10px;
+}
+.songName {
+  padding-left: 20px;
+}
+.playSong {
+  padding-right: 20px;
+}
+.song {
+  opacity: 1;
+  background-color: chocolate;
+  color: black;
+  border-radius: 30px;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.songPlayer {
+  background-color: chocolate;
+  color: white;
+  height: 93px;
+  min-width: 824px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.songSelected {
+  min-width: 723px;
+  height: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.songPlayer .progressBar {
+  height: 10px;
+  color: black;
+  margin: 10px 0px;
+}
+.songPlayer .progressBar .bar {
+  width: 70vw;
+  min-width: 723px;
+  color: sienna;
+}
+.songPlayer .songSelected #songDetails {
+  font-size: 12px;
+  margin: auto;
+}
+.songPlayer .songSelected .player {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 200px;
+  height: 30px;
+  margin: auto auto;
+  background-color: burlywood;
+  color: black;
+  border-radius: 20px;
+}
+.songPlayer .songSelected .player .play-icons {
+  margin: auto auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.songPlayer .songSelected .player .play-icons .icon {
+  margin: auto 10px;
+}
+.songPlayer .songSelected .playAnimation .animation {
+  opacity: 1;
+  height: 20px;
+  width: 15vw;
+}
+@media only screen and (max-width: 800px) {
+  .playlist {
+    position: relative;
+    left: 0px;
+  }
+  .music-playlist {
+    margin: 20px 20px;
+  }
+}
